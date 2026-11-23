@@ -33,6 +33,6 @@ def decide(events, terms):
         raise Rejected("NO_PORT_COMPLETION", "events")
     if finish["time"] < start:
         raise Rejected("COMPLETED_BEFORE_CLOCK", "events")
-    return {"start": start, "end": finish["time"], "term": term, "notice_line": row["line"],
-            "readiness_line": ready["line"], "loading_line": loading["line"],
-            "completion_line": finish["line"], "decisions": decisions}
+    return {"start": start, "end": finish["time"], "term": term, "terms": terms,
+            "notice_line": row["line"], "readiness_line": ready["line"],
+            "loading_line": loading["line"], "completion_line": finish["line"], "decisions": decisions}

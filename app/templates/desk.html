@@ -24,6 +24,7 @@
         <label for="harbor-sample">航次资料</label>
         <select name="sample" id="harbor-sample">
           <option value="dirty" {{ 'selected' if mode == 'dirty' }}>跨年争议航次</option>
+          <option value="renewal" {{ 'selected' if mode == 'renewal' }}>中途续价航次</option>
           <option value="clean" {{ 'selected' if mode == 'clean' }}>标准完结航次</option>
           <option value="custom" {{ 'selected' if mode == 'custom' }}>自填 CSV</option>
         </select>

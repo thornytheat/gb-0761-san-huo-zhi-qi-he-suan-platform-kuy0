@@ -22,5 +22,6 @@ def evaluate(sources, until="ledger"):
     result["clock"] = replay(result["notice"], result["exceptions"]["segments"])
     if until == "clock":
         return result
-    result["ledger"] = compare(result["notice"], result["clock"], data["invoice"], result["intake"]["isolated"])
+    result["ledger"] = compare(result["notice"], result["clock"], data["invoice"],
+                               result["intake"]["isolated"])
     return result

@@ -17,3 +17,8 @@ def dirty():
 @pytest.fixture
 def clean():
     return sample("clean")
+
+
+@pytest.fixture
+def renewal():
+    return sample("renewal")

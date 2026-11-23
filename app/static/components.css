@@ -37,6 +37,8 @@ th { position: sticky; top: 0; background: var(--surface-2); z-index: 1; }
 .delta small { font-size: 10px; overflow-wrap: anywhere; }
 .duel-total { background: var(--surface-2); border-top: 1px solid var(--line); }
 .archive p, .archive dl { margin: 10px 13px; overflow-wrap: anywhere; }
+.rate-hold { margin: 10px 13px; border: 1px solid var(--bad); border-radius: var(--radius); background: var(--surface); line-height: 1.7; }
+.panel .notes { color: var(--ink-muted); font-size: 12px; border-top: 1px solid var(--line); }
 @media (max-width: 580px) {
   .ledger-cap, .duel-total, .entry { grid-template-columns: minmax(0,1fr) 74px minmax(0,1fr); }
   .entry > div, .duel-total > * { padding: 5px; }
